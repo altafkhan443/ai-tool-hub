@@ -190,6 +190,31 @@ font-weight:bold;
 <h2>Remove.bg</h2>
 <p>Remove image backgrounds instantly.</p>
 <a href="https://www.remove.bg" target="_blank">Open Remove.bg</a>
-</div>    
+</div>
+ <script>
+const searchInput = document.getElementById("searchInput");
+
+if(searchInput){
+searchInput.addEventListener("keyup", function(){
+
+let value = this.value.toLowerCase();
+
+let cards = document.querySelectorAll(".card");
+
+cards.forEach(card =>{
+
+let text = card.innerText.toLowerCase();
+
+if(text.includes(value)){
+card.style.display="block";
+}else{
+card.style.display="none";
+}
+
+});
+
+});
+}
+</script>   
 </body>
 </html>
