@@ -86,7 +86,40 @@ footer{
     background:#1a1a1a;
     padding:20px;
     margin-top:40px;
-}  
+} 
+.stats{
+display:flex;
+justify-content:center;
+gap:20px;
+margin:40px;
+flex-wrap:wrap;
+}
+
+.stat-box{
+background:#111;
+padding:20px;
+width:170px;
+border-radius:12px;
+text-align:center;
+box-shadow:0 0 15px rgba(0,229,255,.3);
+transition:.3s;
+}
+
+.stat-box:hover{
+transform:translateY(-8px);
+box-shadow:0 0 25px #00e5ff;
+}
+
+.stat-box h2{
+color:#00e5ff;
+font-size:32px;
+margin:0;
+}
+
+.stat-box p{
+color:white;
+margin-top:8px;
+}    
 </style>
 
 </head>
@@ -108,6 +141,24 @@ footer{
     <p>Find the Best Free AI Tools in One Place</p>
     <a href="tools.html">
     <button>Explore Now</button>
+    <section class="stats">
+
+<div class="stat-box">
+<h2>50+</h2>
+<p>AI Tools</p>
+</div>
+
+<div class="stat-box">
+<h2>24/7</h2>
+<p>Updated</p>
+</div>
+
+<div class="stat-box">
+<h2>100%</h2>
+<p>Free Guides</p>
+</div>
+
+</section>    
     </a>    
 </div>
 
