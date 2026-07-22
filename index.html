@@ -266,6 +266,47 @@ box-shadow:0 0 20px #00e5ff;
 
 .search-box input:focus{
     box-shadow:0 0 25px #00e5ff;
+}
+.featured-tool{
+max-width:700px;
+margin:30px auto;
+padding:25px;
+background:#151515;
+border:2px solid #00e5ff;
+border-radius:15px;
+text-align:center;
+box-shadow:0 0 20px rgba(0,229,255,.4);
+}
+
+.featured-tool h2{
+color:#00e5ff;
+margin-bottom:10px;
+}
+
+.featured-tool h3{
+font-size:30px;
+color:white;
+margin-bottom:10px;
+}
+
+.featured-tool p{
+color:#ddd;
+margin-bottom:20px;
+}
+
+.featured-tool button{
+background:#00e5ff;
+color:black;
+border:none;
+padding:12px 25px;
+border-radius:10px;
+cursor:pointer;
+font-weight:bold;
+transition:.3s;
+}
+
+.featured-tool button:hover{
+transform:scale(1.05);
 }    
 </style>
 
@@ -288,6 +329,14 @@ box-shadow:0 0 20px #00e5ff;
     <p>Your #1 destination for AI tools, honest reviews, step-by-step Hindi guides, and online earning resources.</p>
     <a href="tools.html">
     <button>Explore Now</button>
+      <div class="featured-tool">
+    <h2>⭐ Featured Tool of the Day</h2>
+    <h3>🤖 ChatGPT</h3>
+    <p>The best AI assistant for writing, coding, learning, and productivity.</p>
+    <a href="tools.html">
+        <button>Open Tool</button>
+    </a>
+</div>  
      <div class="search-box">
     <input type="text" id="searchInput" placeholder="🔍 Search AI Tools...">
 </div>   
