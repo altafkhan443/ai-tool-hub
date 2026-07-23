@@ -307,7 +307,29 @@ transition:.3s;
 
 .featured-tool button:hover{
 transform:scale(1.05);
-}    
+} 
+ .features{
+display:flex;
+justify-content:center;
+gap:20px;
+margin:40px 0;
+flex-wrap:wrap;
+}
+
+.feature{
+background:#1a1a1a;
+padding:20px;
+border-radius:12px;
+border:1px solid #00e5ff;
+width:180px;
+text-align:center;
+transition:.3s;
+}
+
+.feature:hover{
+transform:translateY(-8px);
+box-shadow:0 0 20px #00e5ff;
+}   
 </style>
 
 </head>
@@ -329,6 +351,11 @@ transform:scale(1.05);
     <p>Your #1 destination for AI tools, honest reviews, step-by-step Hindi guides, and online earning resources.</p>
     <a href="tools.html">
     <button>Explore Now</button>
+     <div class="features">
+  <div class="feature">⚡ Fast AI Tools</div>
+  <div class="feature">🔥 Daily Updates</div>
+  <div class="feature">💯 Free Guides</div>
+</div>   
       <div class="featured-tool">
     <h2>⭐ Featured Tool of the Day</h2>
     <h3>🤖 ChatGPT</h3>
