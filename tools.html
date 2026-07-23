@@ -2,114 +2,120 @@
 <html>
 <head>
 <title>AI Tools</title>
-
 <style>
-body{
-background:#111;
-color:white;
-font-family:Arial,sans-serif;
+*{
 margin:0;
-padding:20px;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0f172a,#111827,#000);
+color:#fff;
 }
 
 h1{
 text-align:center;
+font-size:42px;
 color:#00e5ff;
+margin:30px 0;
+text-shadow:0 0 15px #00e5ff;
+}
+
+.tools-container{
+max-width:1400px;
+margin:auto;
+padding:30px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
 }
 
 .card{
-background:#222;
-padding:20px;
-margin:20px auto;
-max-width:700px;
-border-radius:10px;
-}
-
-a{
-display:inline-block;
-margin-top:10px;
-background:#00e5ff;
-color:black;
-padding:10px 20px;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
-}
-.card{
-    transition:0.3s;
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(10px);
+border:1px solid rgba(0,229,255,.3);
+border-radius:18px;
+padding:22px;
+text-align:center;
+transition:.35s;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+min-height:240px;
 }
 
 .card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 0 20px #00e5ff;
-}
-
-.card a{
-    display:inline-block;
-    margin-top:10px;
-    background:#00e5ff;
-    color:black;
-    padding:10px 18px;
-    border-radius:8px;
-    text-decoration:none;
-    font-weight:bold;
-}
-.card{
-    background:#1e1e1e;
-    border:1px solid #00e5ff;
-    border-radius:15px;
-    padding:20px;
-    text-align:center;
-    transition:0.3s;
-    box-shadow:0 0 10px rgba(0,229,255,0.15);
-}
-
-.card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 0 25px rgba(0,229,255,0.5);
+transform:translateY(-10px);
+box-shadow:0 0 25px rgba(0,229,255,.6);
+border-color:#00e5ff;
 }
 
 .card h2{
-    color:#00e5ff;
-    margin-bottom:10px;
+color:#00e5ff;
+margin-bottom:10px;
+font-size:24px;
 }
 
 .card p{
-    color:#ddd;
-    min-height:45px;
+color:#ddd;
+line-height:1.6;
 }
 
 .card a{
-    display:inline-block;
-    margin-top:15px;
-    padding:10px 18px;
-    background:#00e5ff;
-    color:#111;
-    text-decoration:none;
-    border-radius:8px;
-    font-weight:bold;
+margin-top:18px;
+padding:12px;
+background:#00e5ff;
+color:#111;
+font-weight:bold;
+border-radius:10px;
+text-decoration:none;
+transition:.3s;
 }
 
 .card a:hover{
-    background:#00bcd4;
-
-}
-  .tools-container{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
-    padding:30px;
-    max-width:1400px;
-    margin:auto;
+background:#00bcd4;
 }
 
-.card{
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    min-height:220px;
-}  
+button{
+padding:10px 18px;
+margin:5px;
+border:none;
+border-radius:30px;
+background:#00e5ff;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+background:#00bcd4;
+}
+
+#searchInput{
+width:80%;
+max-width:550px;
+padding:14px;
+border-radius:12px;
+border:none;
+font-size:16px;
+outline:none;
+}
+
+@media(max-width:768px){
+h1{
+font-size:32px;
+}
+
+.tools-container{
+grid-template-columns:1fr;
+padding:15px;
+}
+}
 </style>
+
 </head>
 
 <body>
