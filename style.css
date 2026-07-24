@@ -281,3 +281,21 @@ margin:0 10px;
 }
 
 }
+.tool-card{
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+min-height:220px;
+}
+
+.tool-grid,
+.tools-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+padding:25px;
+}
+
+.card{
+width:100%;
+}
