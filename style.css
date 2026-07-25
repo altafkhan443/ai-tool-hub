@@ -273,7 +273,14 @@ margin:0 10px;
     flex-direction:column;
     gap:20px;
 }
+.hero{
+    text-align:center;
+}
 
+.search-box{
+    display:block;
+    margin:30px auto;
+}
 .featured-tools h2,
 .latest h2,
 .cta h2{
