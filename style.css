@@ -306,3 +306,38 @@ padding:25px;
 .card{
 width:100%;
 }
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:30px;
+    font-weight:bold;
+    color:#00d4ff;
+}
+
+.logo img{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+}
+
+.navbar{
+    padding:15px 8%;
+}
+
+.hero{
+    margin-top:30px;
+}
+
+.hero p{
+    margin:20px auto;
+}
+
+.search-box{
+    display:block;
+    margin:30px auto;
+}
+
+footer{
+    color:white;
+}
