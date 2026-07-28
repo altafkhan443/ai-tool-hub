@@ -350,3 +350,29 @@ width:100%;
 footer{
     color:white;
 }
+
+.hero-btn{
+display:inline-block;
+padding:15px 35px;
+background:#00e5ff;
+color:#000;
+font-weight:bold;
+border-radius:8px;
+transition:0.3s;
+text-decoration:none;
+}
+
+.hero-btn:hover{
+background:#00bcd4;
+transform:scale(1.05);
+}
+
+.card{
+border-radius:12px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 25px rgba(0,229,255,.3);
+}
