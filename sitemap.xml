@@ -25,5 +25,11 @@
 <loc>https://altafkhan443.github.io/ai-tool-hub/contact.html</loc>
 <priority>0.7</priority>
 </url>
+<url>
+  <loc>https://altafkhan443.github.io/ai-tool-hub/article1.html</loc>
+  <lastmod>2026-07-30</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>  
 
 </urlset>
