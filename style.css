@@ -406,3 +406,21 @@ border:1px solid #30363d;
     width:auto;
     border-radius:10px;
 }
+.latest-article{
+margin-top:40px;
+padding:20px;
+background:#151515;
+border-radius:15px;
+text-align:center;
+}
+
+.latest-article a{
+color:#00E5FF;
+font-size:22px;
+font-weight:bold;
+text-decoration:none;
+}
+
+.latest-article a:hover{
+text-decoration:underline;
+}
