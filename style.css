@@ -414,6 +414,11 @@ background:#151515;
 border-radius:15px;
 text-align:center;
 }
+.latest-article h2{
+    color:#ffffff;
+    background:none;
+    box-shadow:none;
+}
 
 .latest-article a{
 color:#00E5FF;
