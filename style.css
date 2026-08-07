@@ -539,3 +539,24 @@ transform:translateY(-5px);
     transform:scale(1.05);
     box-shadow:0 0 20px #00d4ff;
 }
+#topBtn{
+    display:none;
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    z-index:999;
+    background:#00d4ff;
+    color:#000;
+    border:none;
+    border-radius:50%;
+    width:50px;
+    height:50px;
+    font-size:22px;
+    cursor:pointer;
+    box-shadow:0 0 15px #00d4ff;
+    transition:.3s;
+}
+
+#topBtn:hover{
+    transform:scale(1.1);
+}
