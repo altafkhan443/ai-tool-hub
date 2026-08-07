@@ -483,3 +483,39 @@ transform:translateY(-5px);
 .search-box input:focus{
     box-shadow:0 0 15px #00d4ff;
 }
+.features{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.features h2{
+    color:#00d4ff;
+    margin-bottom:30px;
+}
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.feature-card{
+    background:#151515;
+    padding:25px;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.feature-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px rgba(0,212,255,.4);
+}
+
+.feature-card h3{
+    color:white;
+    margin:15px 0;
+}
+
+.feature-card p{
+    color:#bbb;
+}
