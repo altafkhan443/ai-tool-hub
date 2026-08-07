@@ -83,3 +83,9 @@ function topFunction() {
         behavior: "smooth"
     });
 }
+
+// Loading Screen
+
+window.addEventListener("load",function(){
+    document.getElementById("loader").style.display="none";
+});
