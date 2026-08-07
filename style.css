@@ -137,15 +137,16 @@ margin-bottom:15px;
 .card a{
 display:inline-block;
 padding:12px 22px;
-background:#00d4ff;
-color:#000;
+background:#23283b;
+color:#ffffff;
 border-radius:10px;
 font-weight:bold;
 transition:.3s;
 }
 
 .card a:hover{
-background:#00b5d8;
+background:#00d4ff;
+   color:#000;
 }
 
 footer{
