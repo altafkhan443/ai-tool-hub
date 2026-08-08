@@ -97,6 +97,17 @@ outline:none;
 background:#1e293b;
 color:white;
 }
+/* Search box glow effect */
+.search-box input:focus {
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.45);
+    transform: scale(1.01);
+    transition: 0.25s;
+}
+
+/* Search box smooth effect */
+.search-box input {
+    transition: 0.25s;
+}
 
 .tools-container{
 max-width:1400px;
