@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Royal Family Salon | Jaipur</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial,sans-serif;
+  background:#f8f2e8;
+  color:#1d1712;
+}
+
+nav{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:10;
+  padding:18px 7%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(18,15,12,.94);
+  color:white;
+}
+
+.logo{
+  font-family:Georgia,serif;
+  font-size:22px;
+}
+
+.logo span{
+  color:#d8b56a;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:22px;
+  font-size:14px;
+}
+
+.hero{
+  min-height:100vh;
+  padding:120px 7% 60px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:center;
+  color:white;
+  background:
+  radial-gradient(circle at 80% 20%,#684f31,#241b14 42%,#120f0c 78%);
+}
+
+.kicker{
+  color:#d8b56a;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  font-size:13px;
+}
+
+.hero h1{
+  font-family:Georgia,serif;
+  font-size:clamp(48px,7vw,82px);
+  line-height:.98;
+  margin:18px 0;
+}
+
+.hero p{
+  color:#ddd;
+  font-size:18px;
+  line-height:1.7;
+  max-width:600px;
+}
+
+.buttons{
+  margin-top:28px;
+}
+
+.btn{
+  display:inline-block;
+  padding:14px 23px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+  margin-right:10px;
+  margin-top:10px;
+}
+
+.primary{
+  background:#d8b56a;
+  color:#20170d;
+}
+
+.secondary{
+  border:1px solid #806b4f;
+  color:white;
+}
+
+.visual{
+  height:500px;
+  border-radius:28px;
+  position:relative;
+  overflow:hidden;
+  background:
+  linear-gradient(145deg,#6e5535,#17120e 60%,#9a7542);
+  box-shadow:0 25px 70px rgba(0,0,0,.5);
+}
+
+.visual:before,
+.visual:after{
+  content:"";
+  position:absolute;
+  top:18%;
+  width:27%;
+  height:55%;
+  border:5px solid #d8b56a;
+  border-radius:48%;
+  background:
+  linear-gradient(120deg,#20252a,#9b7a4c,#20252a);
+  box-shadow:0 15px 35px #000;
+}
+
+.visual:before{
+  left:15%;
+}
+
+.visual:after{
+  right:15%;
+}
+
+.chair{
+  position:absolute;
+  bottom:15%;
+  left:40%;
+  width:20%;
+  height:25%;
+  background:#101820;
+  border-radius:35%;
+}
+
+.chair:after{
+  content:"";
+  position:absolute;
+  left:42%;
+  top:100%;
+  width:16%;
+  height:55px;
+  background:#b58c4d;
+}
+
+section{
+  padding:85px 7%;
+}
+
+.title{
+  text-align:center;
+  font-family:Georgia,serif;
+  font-size:42px;
+  margin-bottom:12px;
+}
+
+.sub{
+  text-align:center;
+  color:#877a6d;
+  max-width:700px;
+  margin:0 auto 42px;
+  line-height:1.6;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+
+.card{
+  background:white;
+  padding:28px;
+  border-radius:20px;
+  box-shadow:0 8px 28px rgba(50,35,20,.08);
+}
+
+.icon{
+  font-size:32px;
+}
+
+.card h3{
+  margin:14px 0 9px;
+}
+
+.card p{
+  color:#877a6d;
+  line-height:1.5;
+}
+
+.about{
+  background:#201812;
+  color:white;
+}
+
+.about .sub{
+  color:#cfc0b0;
+}
+
+.stats{
+  display:flex;
+  justify-content:center;
+  gap:60px;
+  flex-wrap:wrap;
+  text-align:center;
+}
+
+.stat b{
+  display:block;
+  color:#d8b56a;
+  font-size:36px;
+}
+
+.stat span{
+  color:#c9bbad;
+}
+
+.contact{
+  background:white;
+}
+
+.contactbox{
+  max-width:850px;
+  margin:auto;
+  background:#17120e;
+  color:white;
+  border-radius:25px;
+  padding:40px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+}
+
+.contactbox h3{
+  color:#d8b56a;
+  font-family:Georgia,serif;
+  font-size:28px;
+  margin-bottom:15px;
+}
+
+.contactbox p{
+  line-height:1.8;
+  color:#ddd;
+}
+
+.contactbox a{
+  color:white;
+}
+
+.footer{
+  text-align:center;
+  background:#120f0c;
+  color:#aaa;
+  padding:28px;
+  font-size:13px;
+}
+
+@media(max-width:800px){
+
+  nav .links{
+    display:none;
+  }
+
+  .hero{
+    grid-template-columns:1fr;
+    padding:105px 5% 50px;
+  }
+
+  .visual{
+    height:360px;
+  }
+
+  section{
+    padding:70px 5%;
+  }
+
+  .cards{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .contactbox{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:480px){
+
+  .cards{
+    grid-template-columns:1fr;
+  }
+
+  .hero h1{
+    font-size:52px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+Royal <span>Family</span> Salon
+</div>
+
+<div class="links">
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</div>
+
+</nav>
+
+
+<header class="hero">
+
+<div>
+
+<div class="kicker">
+Sodala • Jaipur
+</div>
+
+<h1>
+Your Royal<br>
+Beauty Experience.
+</h1>
+
+<p>
+A premium salon experience for hair care,
+skin care, makeup and complete grooming.
+</p>
+
+<div class="buttons">
+
+<a class="btn primary"
+href="tel:+918209537463">
+📞 Call Now
+</a>
+
+<a class="btn secondary"
+href="https://wa.me/918209537463">
+💬 WhatsApp
+</a>
+
+</div>
+
+</div>
+
+
+<div class="visual">
+
+<div class="chair"></div>
+
+</div>
+
+</header>
+
+
+<section id="services">
+
+<h2 class="title">
+Our Services
+</h2>
+
+<p class="sub">
+Professional beauty and grooming services
+for your complete look.
+</p>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<div class="icon">✂️</div>
+
+<h3>
+Hair Care
+</h3>
+
+<p>
+Haircuts, hair styling, blow dry,
+hair spa and treatments.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">✨</div>
+
+<h3>
+Skin Care
+</h3>
+
+<p>
+Facials and beauty skin-care
+treatments.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">💄</div>
+
+<h3>
+Makeup
+</h3>
+
+<p>
+Party makeup, bridal makeup
+and groom makeup.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">👑</div>
+
+<h3>
+Grooming
+</h3>
+
+<p>
+Complete grooming and makeover
+services.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<section class="about" id="about">
+
+<h2 class="title">
+Royal Family Salon
+</h2>
+
+<p class="sub">
+A beautiful online presence that helps
+customers discover your services and
+contact you quickly.
+</p>
+
+
+<div class="stats">
+
+<div class="stat">
+
+<b>4.8★</b>
+
+<span>
+Google Rating
+</span>
+
+</div>
+
+
+<div class="stat">
+
+<b>53+</b>
+
+<span>
+Google Reviews
+</span>
+
+</div>
+
+
+<div class="stat">
+
+<b>9–8</b>
+
+<span>
+Daily Hours
+</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="contact" id="contact">
+
+<h2 class="title">
+Visit Us
+</h2>
+
+<p class="sub">
+Call or WhatsApp Royal Family Salon directly.
+</p>
+
+
+<div class="contactbox">
+
+
+<div>
+
+<h3>
+Royal Family Salon
+</h3>
+
+<p>
+Shop No. G-3 & 4,
+Vinayak Business Point,<br>
+near Kabra Eye Hospital,
+Jamuna Nagar,<br>
+Sodala, Jaipur,
+Rajasthan 302006
+</p>
+
+</div>
+
+
+<div>
+
+<h3>
+Get in Touch
+</h3>
+
+<p>
+
+📞
+<a href="tel:+918209537463">
++91 82095 37463
+</a>
+
+<br>
+
+💬
+<a href="https://wa.me/918209537463">
+WhatsApp
+</a>
+
+<br>
+
+🕘
+Monday–Sunday: 9:00 AM–8:00 PM
+
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<div class="footer">
+
+Demo Website • Royal Family Salon • Jaipur
+
+</div>
+
+
+</body>
+</html>
